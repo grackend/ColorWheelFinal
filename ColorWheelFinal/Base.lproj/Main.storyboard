@@ -1,25 +1,382 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jRp-l5-byx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--View Controller - WelcomeScreen-->
+        <scene sceneID="u0c-N1-VWD">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WelcomeScreen" id="jRp-l5-byx" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="qhb-Rc-ioc"/>
+                        <viewControllerLayoutGuide type="bottom" id="zmz-oq-mZ8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="j0q-fX-4Wh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HZ-Rf-2vu">
+                                <rect key="frame" x="89" y="79" width="142" height="51"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcY-2d-qrj">
+                                <rect key="frame" x="107" y="371" width="106" height="30"/>
+                                <color key="backgroundColor" red="0.48237869919999998" green="0.95677649460000003" blue="0.80745119099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nfh-lM-mTd" kind="modal" id="Xkn-GH-VGs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90589012960000004" green="1" blue="0.99548502670000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlP-bG-s5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-39" y="927"/>
+        </scene>
+        <!--Button Controller - ChooseScreen-->
+        <scene sceneID="BqO-LN-Ex9">
+            <objects>
+                <viewController title="ChooseScreen" id="mZR-8K-fUq" customClass="ButtonController" customModule="ColorWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xg7-3P-XGI"/>
+                        <viewControllerLayoutGuide type="bottom" id="k2M-C7-pQH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jle-Xr-3dn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Au4-SH-uy9" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="164" y="79" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.95677649460000003" green="0.43704313360000002" blue="0.25741023330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RedOrange"/>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="RedOrangeSegue" id="mU2-gj-Tfj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqA-lG-fRQ" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="236" y="159" width="58" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.91147977599999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Goldenrod"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="GoldenrodSegue" id="GIB-9y-E9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3L-A5-Eon" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="20" y="240" width="58" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Yellow"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="YellowSegue" id="54c-Fg-G0H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8J-wa-gVN" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="164" y="159" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.95260275459999999" green="0.78985302930000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="BabyPink"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="BabyPinkSegue" id="076-lx-cwM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO3-19-yNH" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="20" y="159" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.95677649460000003" green="0.2695229697" blue="0.84864143530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Magenta"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="MagentaSegue" id="SkV-ku-OY9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-QM-P2a" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="92" y="79" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.95677649460000003" green="0.2421675415" blue="0.45290664899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Fuschia"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="FuschiaSegue" id="CUe-WY-Qjr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2N-XU-hid" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="236" y="79" width="58" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.72708608699999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Orange"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="OrangeSegue" id="ZNo-bN-1Iw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMg-iH-oH1" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="20" y="79" width="58" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Red"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="RedSegue" id="MBD-Tg-sDP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URq-Ao-u9M" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="236" y="400" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.73790002050000003" green="0.49322603469999998" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Lavender"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="LavenderSegue" id="30q-W7-TJZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZQ-AB-KSa" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="164" y="240" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.25636489509999999" green="0.95677649460000003" blue="0.51797125740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Green"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="GreenSegue" id="LuY-Th-Hjk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fh-kF-E3n" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="92" y="240" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.78382294929999996" green="0.95677649460000003" blue="0.30450999159999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="YellowGreen"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="YellowGreenSegue" id="KrX-P2-G2A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yq0-ee-V5u" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="164" y="400" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.62751755129999998" green="0.1931265469" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Purple"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="PurpleSegue" id="6eg-xE-hxI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evt-hO-tsT" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="92" y="400" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.42653182880000001" green="0.0" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Indigo"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="IndigoSegue" id="7Kh-QZ-w05"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjD-bk-dn5" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="20" y="400" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.21387977129999999" green="0.49417608149999998" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Periwinkle"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="PeriwinkleSegue" id="c8s-J4-YbK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7a-1l-Prx" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="20" y="320" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.4176704772" green="0.95677649460000003" blue="0.89126347709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="SeaFoam"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="SeaFoamSegue" id="mbN-Ug-5QW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpa-Va-Ag6" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="164" y="320" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.24835556650000001" green="0.86672890189999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="RobinsEgg"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="RobinsEggSegue" id="CyG-kL-DIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ry-8E-26f" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="236" y="240" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Moss"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="MossSegue" id="nhe-VT-cwC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paU-zr-USH" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="92" y="320" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.55472452790000004" green="1" blue="0.989316957" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Ice"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="IceSegue" id="gJ3-oc-aSu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvN-xg-W1v" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="236" y="320" width="58" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.69542437879999996" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Sky"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="SkySegue" id="lqO-Q3-cPj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtE-5t-vQw" customClass="TestingFile" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="92" y="159" width="58" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.65735797330000001" blue="0.78310296989999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Rose"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" identifier="RoseSegue" id="xr2-ol-319"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80551990419999997" green="0.92578519969999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose a Color" id="rNg-Di-BgU"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8em-mX-pw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="927"/>
+        </scene>
+        <!--PaletteView-->
+        <scene sceneID="eYH-Ri-Gpx">
+            <objects>
+                <viewController id="8FN-fW-saB" userLabel="PaletteView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gCi-tW-6ZM"/>
+                        <viewControllerLayoutGuide type="bottom" id="rkO-4v-Bp2"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="oFk-RL-v4g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSd-3x-kp3" customClass="ColorController" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="172" y="228" width="115" height="115"/>
+                                <accessibility key="accessibilityConfiguration" label="MatchThree">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ein-lK-jyh" customClass="ColorController" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="42" y="228" width="115" height="115"/>
+                                <accessibility key="accessibilityConfiguration" label="MatchTwo">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-pc-MS3" customClass="ColorController" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="172" y="99" width="115" height="115"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label="MatchOne">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsn-PQ-6Mb">
+                                <rect key="frame" x="117" y="410" width="87" height="30"/>
+                                <color key="backgroundColor" red="0.48123009160000002" green="0.961714764" blue="0.82398750659999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mZR-8K-fUq" kind="push" id="z8h-eR-YWZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcm-eB-fRb">
+                                <rect key="frame" x="117" y="372" width="87" height="30"/>
+                                <color key="backgroundColor" red="0.73213572790000003" green="0.98154496170000005" blue="0.93870956400000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8FN-fW-saB" kind="push" id="vNN-ME-lrN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iww-VL-OSs" customClass="ColorController" customModule="ColorWheel" customModuleProvider="target">
+                                <rect key="frame" x="42" y="99" width="115" height="115"/>
+                                <accessibility key="accessibilityConfiguration" label="ColorOriginal">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90589012960000004" green="1" blue="0.99548502670000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dNX-Do-zqg"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qG-ib-T2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="940"/>
+        </scene>
+        <!--Navigation Controller - Color Choosing-->
+        <scene sceneID="XNu-8s-eb8">
+            <objects>
+                <navigationController title="Color Choosing" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="Nfh-lM-mTd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ebq-qz-J0I"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tqt-Jv-KyO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mZR-8K-fUq" kind="relationship" relationship="rootViewController" id="GkZ-Ac-S5X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABo-7a-9OH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="927"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="z8h-eR-YWZ"/>
+        <segue reference="MBD-Tg-sDP"/>
+    </inferredMetricsTieBreakers>
 </document>

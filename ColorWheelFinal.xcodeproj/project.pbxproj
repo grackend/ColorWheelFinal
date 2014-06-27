@@ -12,6 +12,9 @@
 		B24A0B5F195DE3CD00FE84D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24A0B5D195DE3CD00FE84D0 /* Main.storyboard */; };
 		B24A0B61195DE3CD00FE84D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24A0B60195DE3CD00FE84D0 /* Images.xcassets */; };
 		B24A0B6D195DE3CD00FE84D0 /* ColorWheelFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A0B6C195DE3CD00FE84D0 /* ColorWheelFinalTests.swift */; };
+		B24A0B77195DE40A00FE84D0 /* TestingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A0B76195DE40A00FE84D0 /* TestingFile.swift */; };
+		B24A0B79195DE42D00FE84D0 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A0B78195DE42D00FE84D0 /* ColorController.swift */; };
+		B24A0B7B195DE44C00FE84D0 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A0B7A195DE44C00FE84D0 /* ButtonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		B24A0B66195DE3CD00FE84D0 /* ColorWheelFinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorWheelFinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A0B6B195DE3CD00FE84D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24A0B6C195DE3CD00FE84D0 /* ColorWheelFinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelFinalTests.swift; sourceTree = "<group>"; };
+		B24A0B76195DE40A00FE84D0 /* TestingFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingFile.swift; sourceTree = "<group>"; };
+		B24A0B78195DE42D00FE84D0 /* ColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		B24A0B7A195DE44C00FE84D0 /* ButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				B24A0B5D195DE3CD00FE84D0 /* Main.storyboard */,
 				B24A0B60195DE3CD00FE84D0 /* Images.xcassets */,
 				B24A0B57195DE3CD00FE84D0 /* Supporting Files */,
+				B24A0B76195DE40A00FE84D0 /* TestingFile.swift */,
+				B24A0B78195DE42D00FE84D0 /* ColorController.swift */,
+				B24A0B7A195DE44C00FE84D0 /* ButtonController.swift */,
 			);
 			path = ColorWheelFinal;
 			sourceTree = "<group>";
@@ -209,7 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B24A0B5C195DE3CD00FE84D0 /* ViewController.swift in Sources */,
+				B24A0B77195DE40A00FE84D0 /* TestingFile.swift in Sources */,
+				B24A0B7B195DE44C00FE84D0 /* ButtonController.swift in Sources */,
 				B24A0B5A195DE3CD00FE84D0 /* AppDelegate.swift in Sources */,
+				B24A0B79195DE42D00FE84D0 /* ColorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
